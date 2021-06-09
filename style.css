@@ -1,0 +1,56 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color:#eee;
+    width: 1000px;
+    padding: 30px auto;
+
+    display: grid;
+    grid-template-rows: repeat(2, 150px);
+    grid-template-columns: repeat(3, 150px);
+
+    align-items: center;
+    justify-items: center;
+
+    /* grid-auto-flow: column; */
+    /* grid-auto-columns: 400px; */
+    /* grid-auto-rows: 200px; */
+    /* grid-template-areas: "head head head"
+                         "foot foot foot"; */
+
+    grid-gap: 30px
+}
+
+.items {
+    padding: 20px;
+    font-size: 30px;
+
+}
+.item1 {
+    /* grid-area: head; */
+    background-color: pink;
+
+    
+}
+.item2 {
+    align-self: start;
+    background-color: teal;
+    
+}
+.item3 {
+    background-color: yellowgreen;
+}
+.item4 {
+    background-color: crimson;
+}
+.item5 {
+    background-color: goldenrod;
+}
+.item6 {
+    /* grid-row: header-start / header-end; */
+    background-color: indianred;
+}
